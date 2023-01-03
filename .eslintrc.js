@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 
 module.exports = {
   root: true,
@@ -15,8 +15,6 @@ module.exports = {
     '@react-native-community',
     'airbnb',
     'prettier',
-    'prettier/react',
-    'prettier/@typescript-eslint',
   ],
   plugins: ['react-native', 'prettier', 'jest', 'detox', 'babel'],
   settings: {
@@ -116,9 +114,14 @@ module.exports = {
 
     // eslint-plugin-import
     'import/no-cycle': 'off',
+    'import/extensions': 'off',
     'import/no-useless-path-segments': 'off',
 
     // eslint-plugin-react
+    'react-native/no-unused-styles': 'off',
+    'react-native/no-color-literals': 'off',
+    'react-native/no-inline-styles': 'off',
+    'react-native/sort-styles': 'off',
     'react/default-props-match-prop-types': 'off',
     'react/destructuring-assignment': 'off',
     'react/forbid-prop-types': 'off',
